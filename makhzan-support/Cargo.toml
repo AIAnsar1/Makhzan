@@ -1,0 +1,10 @@
+[package]
+name = "makhzan-support"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+tracing = { workspace = true }
+thiserror = { workspace = true }
+parking_lot = { workspace = true }

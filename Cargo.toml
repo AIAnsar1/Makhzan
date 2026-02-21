@@ -1,0 +1,49 @@
+[workspace]
+members = [
+    "makhzan", 
+    "makhzan-container", 
+    "makhzan-derive", 
+    "makhzan-macros", 
+    "makhzan-support", 
+]
+
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+repository = "https://github.com/AIAnsar1/makhzan"
+description = "A powerful dependency injection & IoC container for Rust"
+keywords = ["dependency-injection", "ioc", "container", "di", "injection"]
+categories = ["rust-patterns", "development-tools"]
+
+[workspace.dependencies]
+makhzan = { path = "makhzan" }
+makhzan-container = { path = "makhzan-container" }
+makhzan-macros = { path = "makhzan-macros" }
+makhzan-derive = { path = "makhzan-derive" }
+makhzan-support = { path = "makhzan-support" }
+
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.22", features = ["env-filter", "fmt"] }
+thiserror = "2.0.18"
+parking_lot = "0.12.5"
+dashmap = "6.1.0"
+once_cell = "1.21.3"
+anymap2 = "0.13.0"
+serde = { version = "1", features = ["derive"] }
+inventory = "0.3.22"
+linkme = "0.3.35"
+tokio = { version = "1", features = ["full"] }
+async-trait = { version = "0.1.89", optional = true }
+syn = { version = "2", features = ["full", "parsing", "extra-traits"] }
+quote = "1"
+proc-macro2 = "1"
+darling = "0.20"
+
+[patch.crates-io]
+makhzan = { path = "makhzan" }
+
+[workspace.metadata.spellcheck]
+config = "spellcheck.toml"
+

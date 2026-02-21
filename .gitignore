@@ -1,0 +1,15 @@
+target
+Cargo.lock
+
+.cargo/config.toml
+.cargo/config
+
+/target
+Cargo.lock
+*.swp
+*.swo
+.idea/
+.vscode/
+*.log
+
+
