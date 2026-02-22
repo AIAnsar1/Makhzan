@@ -35,11 +35,11 @@ serde = { version = "1", features = ["derive"] }
 inventory = "0.3.22"
 linkme = "0.3.35"
 tokio = { version = "1", features = ["full"] }
-async-trait = { version = "0.1.89", optional = true }
+async-trait = { version = "0.1.89" }
 syn = { version = "2", features = ["full", "parsing", "extra-traits"] }
 quote = "1"
 proc-macro2 = "1"
-darling = "0.20"
+darling = "0.23"
 
 [patch.crates-io]
 makhzan = { path = "makhzan" }
