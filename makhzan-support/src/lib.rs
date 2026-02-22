@@ -1,14 +1,9 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
-}
+//! # Makhzan Support
+//!
+//! Shared utilities and traits for the Makhzan DI framework.
+//!
+//! This crate provides:
+//! - Text rendering for error messages
+//! - Common utilities shared between makhzan crates
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+pub mod rendering;

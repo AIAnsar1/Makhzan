@@ -1,20 +1,14 @@
 //! Core container implementation for Makhzan DI.
 
 pub mod container;
-pub mod scope;
 pub mod error;
+pub mod graph;
+pub mod key;
+pub mod provider;
+pub mod registry;
+pub mod scope;
 
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
-}
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+pub use container::prelude;
+pub use error::{MakhzanError, Result};
+pub use key::DependencyKey;
+pub use scope::Scope;
